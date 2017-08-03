@@ -96,7 +96,6 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 }
 body {
     font-family: @font-roboto;
-    //font-family: @font-src-sans !important;
 }
 
 h1, h2, h3, h4, h5 {
@@ -120,132 +119,6 @@ a {
         color: blue;
     }
 }
-
-//</editor-fold>
-
-
-/* ==========================================================================
-****** Header Section ******
-========================================================================== */
-
-//<editor-fold desc="Header section">
-
-.bg-banner {
-    width: 100%;
-    height: 30px;
-    margin: -5px 0 0 0;
-    background-color: @gray-light;
-    
-    @media (max-width: @screen-tablet) {
-        display: none;
-    }
-}
-
-.wrapper-banner {
-    margin: 20px 0;
-    font-size: 12px;
-    color: @white;
-}
-
-.banner-phone {
-    margin-top: -12px;
-    .phone-icon {
-        margin: 0 10px 0 0;
-    }
-	.banner-phone-text {
-		font-size: 14px;
-		font-weight: bold;
-	}
-    .free-shipping {
-        text-transform: none;
-    }
-}
-
-.banner-message {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 16px;
-}
-
-.chat-message {
-    margin-top: -9px;
-}
-
-.affix {
-    top: 0;
-    width: 100%;
-}
-
-
-.wrapper-subnav {
-    background-color: @white;
-    height: 50px;
-    //padding-top: 20px;
-
-    .subnavall {
-        //margin-bottom: 40px;
-        background-color: @gray-dark;
-        height: 50px;
-    }
-}
-
-.logo {
-    float: left;
-    margin: 10px 20px 0 0;
-}
-
-.subnav-left {
-    float: left;
-    margin-top: 8px;
-    font-size: 24px;
-    margin-left: 5px;
-    text-transform: uppercase;
-    color: @white;
-
-    @media (min-width: @screen-sm-min) {
-        font-size: 24px;
-    }
-	
-	span:first-of-type {
-		margin-right: -3px;
-		font-weight: 700;
-	}
-	
-	span:last-of-type {
-		font-weight: 300;
-	}
-
-		a {
-			&:link {
-				color: @white;
-				text-decoration: none;
-			}
-			&:hover {
-				color: @gray-light;
-			}
-			&:visited {
-				color: @white;
-			}
-			&:active {
-				color: @white;
-			}
-		}
-}
-
-.search-wrapper {
-    margin-top: 7px;
-}
-
-.subnav-wrapper {
-    height: 30px;
-}
-
-//</editor-fold>
-
-
-/* Global Main Body Section
-========================================================================== */
-//<editor-fold desc="Main body globals">
 
 
 
@@ -271,14 +144,17 @@ a {
     
     .image {
         font-size: 24px;
-        
     }
 }
 
 .topic-sub-heading {
-    border-bottom: 1px dotted @gray-light;
+    margin-top: 10px;
+    max-height: 25px;
+    width: 100%;
+    color: @white;
+    background-color: lighten(@black, 35%);
+    text-align: center;
     font-size: 18px;
-    margin-bottom: 20px;
 }
 
 .page-separator {
@@ -293,9 +169,9 @@ a {
 ****** Letterhead Section ******
 ========================================================================== */
 
-//<editor-fold desc="Letterhead Section">
+//<editor-fold desc="Brochure Section">
 
-// look for .page-wrapper and a class with "stationary" in the page wrapper
+// look for .page-wrapper and a class with "brochure" in the page wrapper
 // then a "box" to style.
 // the 3 main sections: training, contact-info, resource-links
 .page-wrapper[class*="brochure"] {
@@ -355,7 +231,7 @@ a {
 
 
 
-// ************ Globals for Letterhead, Logo, Card ************
+// ************ Globals for 3 columns ************
 .first-wrapper, .second-wrapper, .third-wrapper {
     
     @media @desktop-min {
@@ -368,11 +244,11 @@ a {
         float: left;
         padding: 10px;
         
-        .prod-desc {
+        .element-desc {
             margin: 10px 0 20px 0;
         }
         
-        .first-element-head {
+        .element-details-head {
             background-color: darken(@gray-medium, 10%);
             color: @white;
             padding: 5px;
@@ -391,33 +267,60 @@ a {
             width: 100%;
             //margin-left: 10px;
             border-bottom: 1px dotted lighten(@gray-light, 10%);
-        }
-        
-        .key, .value {
-            font-size: 12px;
-        }
-        
-        .key {
-            float: left;
-            width: 55%;
-            text-align: left;
-            
-            span {
-            
-            }
-        }
-        
-        .value {
-            float: left;
-            width: 45%;
-            text-align: right;
     
-            img {
-                float: right;
+            .key, .value {
+                font-size: 12px;
+            }
+    
+            .key {
+                float: left;
+                width: 55%;
+                text-align: left;
+        
+                span {
+            
+                }
+            }
+    
+            .value {
+                float: left;
+                width: 45%;
+                text-align: right;
+        
+                img {
+                    float: right;
+                }
             }
         }
         
-
+        .key-value-desc {
+            
+            .key, .value, .desc {
+                font-size: 12px;
+            }
+            
+            .key {
+                float: left;
+                width: 30%;
+                padding-left: 5px;
+                text-align: left;
+            }
+            
+            .value {
+                float: left;
+                width: 30%;
+                text-align: center;
+            }
+            
+            .desc {
+                float: left;
+                width: 40%;
+                padding-right: 5px;
+                text-align: right;
+            }
+            
+        }
+        
     }
 }
 
