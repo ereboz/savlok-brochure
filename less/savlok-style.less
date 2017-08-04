@@ -42,14 +42,13 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 
 //<editor-fold desc="Variables">
 
-@font-roboto: "Roboto Condensed", sans-serif;
+@font-roboto: "Roboto", sans-serif;
 @font-opensans: "Open Sans",sans-serif;
 
 @black: #000;
 @white: #fff;
 @orange: #fa0;
 @blue: #48c;
-@red: #d41;
 
 @gray-light: #bebebe;
 @gray-medium: #a2a2a2;
@@ -183,8 +182,8 @@ a {
         border: 1px dotted @black;
         padding: 10px;
         margin-bottom: 20px;
-        color: darken(@gray-medium, 20%);
-        background-color: lighten(@gray-light, 24%);
+        color: lighten(@black, 20%);
+        background-color: lighten(@black, 95%);
         overflow: hidden;
         .rounded-corners();
         
@@ -193,7 +192,7 @@ a {
         }
         
         @media @desktop-min {
-            min-height: 400px;
+            min-height: 275px;
         }
     }
 }
@@ -202,7 +201,7 @@ a {
 // each main section and key-value pair wrappers will get this margin
 .page-wrapper {
     div[class$="wrapper"] {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 }
 
@@ -238,6 +237,12 @@ a {
         min-height: 400px;
     }
     
+    .img-wrapper {
+        img {
+            margin: 0 auto;
+        }
+    }
+    
     .first-elements, .second-elements, .third-elements {
         width: 100%;
         margin: 0 auto;
@@ -249,9 +254,10 @@ a {
         }
         
         .element-details-head {
-            background-color: darken(@gray-medium, 10%);
+            background-color: lighten(@black, 55%);
             color: @white;
             padding: 5px;
+            
             
             .key {
                 padding-left: 5px;
@@ -265,11 +271,10 @@ a {
         .kv-wrapper {
             float: left;
             width: 100%;
-            //margin-left: 10px;
-            border-bottom: 1px dotted lighten(@gray-light, 10%);
+            border-bottom: 1px dotted lighten(@black, 75%);
     
             .key, .value {
-                font-size: 12px;
+                font-size: 14px;
             }
     
             .key {
@@ -296,7 +301,7 @@ a {
         .key-value-desc {
             
             .key, .value, .desc {
-                font-size: 12px;
+                font-size: 14px;
             }
             
             .key {
@@ -321,6 +326,53 @@ a {
             
         }
         
+    }
+}
+
+
+.first-wrapper {
+
+}
+
+.first-wrapper, .second-wrapper, .third-wrapper {
+    .spacers, .o-ring, .zinc, .nylon-nut {
+        img {
+            max-width: 50%;
+        }
+    }
+}
+
+.third-wrapper {
+    .rivets {
+        .img-wrapper-two {
+            float: left;
+            position: relative;
+            font-size: 16px;
+            
+            .pop {
+                float: left;
+                width: 50%;
+                
+                .desc {
+                    position: absolute;
+                    top: 10%;
+                    left: 25%;
+                    z-index: 1;
+                }
+            }
+            
+            .peen {
+                float: left;
+                width: 50%;
+                
+                .desc {
+                    position: absolute;
+                    top: 10%;
+                    left: 90%;
+                    z-index: 1;
+                }
+            }
+        }
     }
 }
 

@@ -1715,10 +1715,10 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 /* Global'S
 ========================================================================== */
 * {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
@@ -1786,8 +1786,8 @@ a:active {
   padding: 10px;
   margin-bottom: 20px;
   overflow: hidden;
-  color: #6f6f6f;
-  background-color: #fbfbfb;
+  color: #333;
+  background-color: #f2f2f2;
   border: 1px dotted #000;
   border-radius: 5px;
 }
@@ -1800,11 +1800,11 @@ a:active {
 }
 @media (min-width: 992px) {
   .page-wrapper[class*="brochure"] .box {
-    min-height: 400px;
+    min-height: 275px;
   }
 }
 .page-wrapper div[class$="wrapper"] {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .first-wrapper {
   position: relative;
@@ -1867,6 +1867,11 @@ a:active {
     min-height: 400px;
   }
 }
+.first-wrapper .img-wrapper img,
+.second-wrapper .img-wrapper img,
+.third-wrapper .img-wrapper img {
+  margin: 0 auto;
+}
 .first-wrapper .first-elements,
 .second-wrapper .first-elements,
 .third-wrapper .first-elements,
@@ -1903,7 +1908,7 @@ a:active {
 .third-wrapper .third-elements .element-details-head {
   padding: 5px;
   color: #fff;
-  background-color: #898989;
+  background-color: #8c8c8c;
 }
 .first-wrapper .first-elements .element-details-head .key,
 .second-wrapper .first-elements .element-details-head .key,
@@ -1938,7 +1943,7 @@ a:active {
 .third-wrapper .third-elements .kv-wrapper {
   float: left;
   width: 100%;
-  border-bottom: 1px dotted #d8d8d8;
+  border-bottom: 1px dotted #bfbfbf;
 }
 .first-wrapper .first-elements .kv-wrapper .key,
 .second-wrapper .first-elements .kv-wrapper .key,
@@ -1958,7 +1963,7 @@ a:active {
 .first-wrapper .third-elements .kv-wrapper .value,
 .second-wrapper .third-elements .kv-wrapper .value,
 .third-wrapper .third-elements .kv-wrapper .value {
-  font-size: 12px;
+  font-size: 14px;
 }
 .first-wrapper .first-elements .kv-wrapper .key,
 .second-wrapper .first-elements .kv-wrapper .key,
@@ -2024,7 +2029,7 @@ a:active {
 .first-wrapper .third-elements .key-value-desc .desc,
 .second-wrapper .third-elements .key-value-desc .desc,
 .third-wrapper .third-elements .key-value-desc .desc {
-  font-size: 12px;
+  font-size: 14px;
 }
 .first-wrapper .first-elements .key-value-desc .key,
 .second-wrapper .first-elements .key-value-desc .key,
@@ -2066,6 +2071,45 @@ a:active {
   width: 40%;
   padding-right: 5px;
   text-align: right;
+}
+.first-wrapper .spacers img,
+.second-wrapper .spacers img,
+.third-wrapper .spacers img,
+.first-wrapper .o-ring img,
+.second-wrapper .o-ring img,
+.third-wrapper .o-ring img,
+.first-wrapper .zinc img,
+.second-wrapper .zinc img,
+.third-wrapper .zinc img,
+.first-wrapper .nylon-nut img,
+.second-wrapper .nylon-nut img,
+.third-wrapper .nylon-nut img {
+  max-width: 50%;
+}
+.third-wrapper .rivets .img-wrapper-two {
+  position: relative;
+  float: left;
+  font-size: 16px;
+}
+.third-wrapper .rivets .img-wrapper-two .pop {
+  float: left;
+  width: 50%;
+}
+.third-wrapper .rivets .img-wrapper-two .pop .desc {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
+}
+.third-wrapper .rivets .img-wrapper-two .peen {
+  float: left;
+  width: 50%;
+}
+.third-wrapper .rivets .img-wrapper-two .peen .desc {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  z-index: 1;
 }
 /* End Letterhead Section
 ========================================================================== */
