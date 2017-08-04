@@ -2086,6 +2086,16 @@ a:active {
 .third-wrapper .nylon-nut img {
   max-width: 50%;
 }
+.first-wrapper .savlok-kit-bagged .img-wrapper-two {
+  position: relative;
+  float: left;
+  margin: 20px 0;
+}
+.first-wrapper .savlok-kit-bagged .img-wrapper-two .loose,
+.first-wrapper .savlok-kit-bagged .img-wrapper-two .bagged {
+  float: left;
+  width: 50%;
+}
 .third-wrapper .rivets .img-wrapper-two {
   position: relative;
   float: left;
