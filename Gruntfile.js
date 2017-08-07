@@ -164,6 +164,17 @@ module.exports = function (grunt) {
         src: 'less/bootstrap.less',
         dest: 'dist/css/<%= pkg.name %>.css'
       },
+        compileSavlok: {
+            options: {
+                strictMath: true,
+                sourceMap: true,
+                outputSourceFiles: true,
+                sourceMapURL: 'savlok-style.css.map',
+                sourceMapFilename: 'dist/css/savlok-style.css.map'
+            },
+            src: 'less/savlok-style.less',
+            dest: 'dist/css/savlok-style.css'
+        },
       compileTheme: {
         options: {
           strictMath: true,
@@ -237,6 +248,10 @@ module.exports = function (grunt) {
       minifyCore: {
         src: 'dist/css/<%= pkg.name %>.css',
         dest: 'dist/css/<%= pkg.name %>.min.css'
+      },
+      minifySavlok: {
+        src: 'dist/css/savlok-style.css',
+        dest: 'dist/css/savlok-style.min.css'
       },
       minifyTheme: {
         src: 'dist/css/<%= pkg.name %>-theme.css',
@@ -474,8 +489,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileSavlok', 'less:compileTheme']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifySavlok', 'cssmin:minifyTheme']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);

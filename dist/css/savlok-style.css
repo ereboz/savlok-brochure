@@ -94,9 +94,7 @@ figure {
 }
 hr {
   height: 0;
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 pre {
   overflow: auto;
@@ -145,9 +143,7 @@ input {
 }
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -155,9 +151,7 @@ input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 input[type="search"] {
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   -webkit-appearance: textfield;
 }
 input[type="search"]::-webkit-search-cancel-button,
@@ -664,15 +658,13 @@ kbd {
   color: #fff;
   background-color: #333;
   border-radius: 3px;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
-          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
 }
 kbd kbd {
   padding: 0;
   font-size: 100%;
   font-weight: bold;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 pre {
   display: block;
@@ -1677,4 +1669,433 @@ pre code {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+/* Developer Notes
+========================================================================== */
+/* ==========================================================================
+Bootstrap LESS variables to reference
+
+@screen-xxxs          320px
+@screen-xxs           375px
+@screen-xs             480px;
+@screen-tablet         768px
+@screen-desktop        992px
+@screen-lg-desktop     1200px
+Custom iphone widths if needed:
+
+.make-xs-column = @screen-xs     =  480px;
+.make-sm-column = @screen-sm-min = 768px;
+.make-md-column = @screen-md-min = 992px;
+.make-lg-column = @screen-lg-min = 1200px;
+
+Custom variables to make using column mixin's possible and keep the DOM
+unpolluted with (col-md-4 col-lg-6, etc.)
+
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+========================================================================== */
+/* Variable's
+========================================================================== */
+/* Mixin'S
+========================================================================== */
+/* Global'S
+========================================================================== */
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 20px 10px;
+  font-weight: 700;
+}
+a:link {
+  color: #48c;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffb31a;
+}
+a:visited {
+  color: #e69900;
+}
+a:active {
+  color: blue;
+}
+.main-wrapper {
+  min-height: 600px;
+}
+.page-wrapper {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .page-wrapper {
+    margin-top: 30px;
+  }
+}
+.topic-heading {
+  width: 100%;
+  min-height: 50px;
+  color: #fff;
+  text-align: center;
+  background-color: black;
+          border-radius: 5px;
+
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+       -o-border-radius: 5px;
+}
+.topic-heading .image {
+  font-size: 24px;
+}
+.topic-sub-heading {
+  width: 100%;
+  max-height: 25px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  background-color: #595959;
+}
+.page-separator {
+  margin-bottom: 40px;
+}
+/* ==========================================================================
+****** Brochure Columns ******
+========================================================================== */
+.page-wrapper[class*="brochure"] .box {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  color: #333;
+  background-color: #f2f2f2;
+  border: 1px dotted #000;
+          border-radius: 5px;
+
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+       -o-border-radius: 5px;
+}
+@media (min-width: 992px) {
+  .page-wrapper[class*="brochure"] .box {
+    min-height: 275px;
+  }
+}
+.page-wrapper div[class$="wrapper"] {
+  margin-bottom: 15px;
+}
+.first-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .first-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.second-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .second-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.third-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .third-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .first-wrapper,
+  .second-wrapper,
+  .third-wrapper {
+    min-height: 400px;
+  }
+}
+.first-wrapper .img-wrapper img,
+.second-wrapper .img-wrapper img,
+.third-wrapper .img-wrapper img {
+  margin: 0 auto;
+}
+.first-wrapper .first-elements,
+.second-wrapper .first-elements,
+.third-wrapper .first-elements,
+.first-wrapper .second-elements,
+.second-wrapper .second-elements,
+.third-wrapper .second-elements,
+.first-wrapper .third-elements,
+.second-wrapper .third-elements,
+.third-wrapper .third-elements {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.first-wrapper .first-elements .element-desc,
+.second-wrapper .first-elements .element-desc,
+.third-wrapper .first-elements .element-desc,
+.first-wrapper .second-elements .element-desc,
+.second-wrapper .second-elements .element-desc,
+.third-wrapper .second-elements .element-desc,
+.first-wrapper .third-elements .element-desc,
+.second-wrapper .third-elements .element-desc,
+.third-wrapper .third-elements .element-desc {
+  margin: 10px 0 20px 0;
+}
+.first-wrapper .first-elements .element-details-head,
+.second-wrapper .first-elements .element-details-head,
+.third-wrapper .first-elements .element-details-head,
+.first-wrapper .second-elements .element-details-head,
+.second-wrapper .second-elements .element-details-head,
+.third-wrapper .second-elements .element-details-head,
+.first-wrapper .third-elements .element-details-head,
+.second-wrapper .third-elements .element-details-head,
+.third-wrapper .third-elements .element-details-head {
+  padding: 5px;
+  color: #fff;
+  background-color: #8c8c8c;
+}
+.first-wrapper .first-elements .element-details-head .key,
+.second-wrapper .first-elements .element-details-head .key,
+.third-wrapper .first-elements .element-details-head .key,
+.first-wrapper .second-elements .element-details-head .key,
+.second-wrapper .second-elements .element-details-head .key,
+.third-wrapper .second-elements .element-details-head .key,
+.first-wrapper .third-elements .element-details-head .key,
+.second-wrapper .third-elements .element-details-head .key,
+.third-wrapper .third-elements .element-details-head .key {
+  padding-left: 5px;
+}
+.first-wrapper .first-elements .element-details-head .value,
+.second-wrapper .first-elements .element-details-head .value,
+.third-wrapper .first-elements .element-details-head .value,
+.first-wrapper .second-elements .element-details-head .value,
+.second-wrapper .second-elements .element-details-head .value,
+.third-wrapper .second-elements .element-details-head .value,
+.first-wrapper .third-elements .element-details-head .value,
+.second-wrapper .third-elements .element-details-head .value,
+.third-wrapper .third-elements .element-details-head .value {
+  padding-right: 5px;
+}
+.first-wrapper .first-elements .kv-wrapper,
+.second-wrapper .first-elements .kv-wrapper,
+.third-wrapper .first-elements .kv-wrapper,
+.first-wrapper .second-elements .kv-wrapper,
+.second-wrapper .second-elements .kv-wrapper,
+.third-wrapper .second-elements .kv-wrapper,
+.first-wrapper .third-elements .kv-wrapper,
+.second-wrapper .third-elements .kv-wrapper,
+.third-wrapper .third-elements .kv-wrapper {
+  float: left;
+  width: 100%;
+  border-bottom: 1px dotted #bfbfbf;
+}
+.first-wrapper .first-elements .kv-wrapper .key,
+.second-wrapper .first-elements .kv-wrapper .key,
+.third-wrapper .first-elements .kv-wrapper .key,
+.first-wrapper .second-elements .kv-wrapper .key,
+.second-wrapper .second-elements .kv-wrapper .key,
+.third-wrapper .second-elements .kv-wrapper .key,
+.first-wrapper .third-elements .kv-wrapper .key,
+.second-wrapper .third-elements .kv-wrapper .key,
+.third-wrapper .third-elements .kv-wrapper .key,
+.first-wrapper .first-elements .kv-wrapper .value,
+.second-wrapper .first-elements .kv-wrapper .value,
+.third-wrapper .first-elements .kv-wrapper .value,
+.first-wrapper .second-elements .kv-wrapper .value,
+.second-wrapper .second-elements .kv-wrapper .value,
+.third-wrapper .second-elements .kv-wrapper .value,
+.first-wrapper .third-elements .kv-wrapper .value,
+.second-wrapper .third-elements .kv-wrapper .value,
+.third-wrapper .third-elements .kv-wrapper .value {
+  font-size: 14px;
+}
+.first-wrapper .first-elements .kv-wrapper .key,
+.second-wrapper .first-elements .kv-wrapper .key,
+.third-wrapper .first-elements .kv-wrapper .key,
+.first-wrapper .second-elements .kv-wrapper .key,
+.second-wrapper .second-elements .kv-wrapper .key,
+.third-wrapper .second-elements .kv-wrapper .key,
+.first-wrapper .third-elements .kv-wrapper .key,
+.second-wrapper .third-elements .kv-wrapper .key,
+.third-wrapper .third-elements .kv-wrapper .key {
+  float: left;
+  width: 55%;
+  text-align: left;
+}
+.first-wrapper .first-elements .kv-wrapper .value,
+.second-wrapper .first-elements .kv-wrapper .value,
+.third-wrapper .first-elements .kv-wrapper .value,
+.first-wrapper .second-elements .kv-wrapper .value,
+.second-wrapper .second-elements .kv-wrapper .value,
+.third-wrapper .second-elements .kv-wrapper .value,
+.first-wrapper .third-elements .kv-wrapper .value,
+.second-wrapper .third-elements .kv-wrapper .value,
+.third-wrapper .third-elements .kv-wrapper .value {
+  float: left;
+  width: 45%;
+  text-align: right;
+}
+.first-wrapper .first-elements .kv-wrapper .value img,
+.second-wrapper .first-elements .kv-wrapper .value img,
+.third-wrapper .first-elements .kv-wrapper .value img,
+.first-wrapper .second-elements .kv-wrapper .value img,
+.second-wrapper .second-elements .kv-wrapper .value img,
+.third-wrapper .second-elements .kv-wrapper .value img,
+.first-wrapper .third-elements .kv-wrapper .value img,
+.second-wrapper .third-elements .kv-wrapper .value img,
+.third-wrapper .third-elements .kv-wrapper .value img {
+  float: right;
+}
+.first-wrapper .first-elements .key-value-desc .key,
+.second-wrapper .first-elements .key-value-desc .key,
+.third-wrapper .first-elements .key-value-desc .key,
+.first-wrapper .second-elements .key-value-desc .key,
+.second-wrapper .second-elements .key-value-desc .key,
+.third-wrapper .second-elements .key-value-desc .key,
+.first-wrapper .third-elements .key-value-desc .key,
+.second-wrapper .third-elements .key-value-desc .key,
+.third-wrapper .third-elements .key-value-desc .key,
+.first-wrapper .first-elements .key-value-desc .value,
+.second-wrapper .first-elements .key-value-desc .value,
+.third-wrapper .first-elements .key-value-desc .value,
+.first-wrapper .second-elements .key-value-desc .value,
+.second-wrapper .second-elements .key-value-desc .value,
+.third-wrapper .second-elements .key-value-desc .value,
+.first-wrapper .third-elements .key-value-desc .value,
+.second-wrapper .third-elements .key-value-desc .value,
+.third-wrapper .third-elements .key-value-desc .value,
+.first-wrapper .first-elements .key-value-desc .desc,
+.second-wrapper .first-elements .key-value-desc .desc,
+.third-wrapper .first-elements .key-value-desc .desc,
+.first-wrapper .second-elements .key-value-desc .desc,
+.second-wrapper .second-elements .key-value-desc .desc,
+.third-wrapper .second-elements .key-value-desc .desc,
+.first-wrapper .third-elements .key-value-desc .desc,
+.second-wrapper .third-elements .key-value-desc .desc,
+.third-wrapper .third-elements .key-value-desc .desc {
+  font-size: 14px;
+}
+.first-wrapper .first-elements .key-value-desc .key,
+.second-wrapper .first-elements .key-value-desc .key,
+.third-wrapper .first-elements .key-value-desc .key,
+.first-wrapper .second-elements .key-value-desc .key,
+.second-wrapper .second-elements .key-value-desc .key,
+.third-wrapper .second-elements .key-value-desc .key,
+.first-wrapper .third-elements .key-value-desc .key,
+.second-wrapper .third-elements .key-value-desc .key,
+.third-wrapper .third-elements .key-value-desc .key {
+  float: left;
+  width: 30%;
+  padding-left: 5px;
+  text-align: left;
+}
+.first-wrapper .first-elements .key-value-desc .value,
+.second-wrapper .first-elements .key-value-desc .value,
+.third-wrapper .first-elements .key-value-desc .value,
+.first-wrapper .second-elements .key-value-desc .value,
+.second-wrapper .second-elements .key-value-desc .value,
+.third-wrapper .second-elements .key-value-desc .value,
+.first-wrapper .third-elements .key-value-desc .value,
+.second-wrapper .third-elements .key-value-desc .value,
+.third-wrapper .third-elements .key-value-desc .value {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+.first-wrapper .first-elements .key-value-desc .desc,
+.second-wrapper .first-elements .key-value-desc .desc,
+.third-wrapper .first-elements .key-value-desc .desc,
+.first-wrapper .second-elements .key-value-desc .desc,
+.second-wrapper .second-elements .key-value-desc .desc,
+.third-wrapper .second-elements .key-value-desc .desc,
+.first-wrapper .third-elements .key-value-desc .desc,
+.second-wrapper .third-elements .key-value-desc .desc,
+.third-wrapper .third-elements .key-value-desc .desc {
+  float: left;
+  width: 40%;
+  padding-right: 5px;
+  text-align: right;
+}
+.first-wrapper .spacers img,
+.second-wrapper .spacers img,
+.third-wrapper .spacers img,
+.first-wrapper .o-ring img,
+.second-wrapper .o-ring img,
+.third-wrapper .o-ring img,
+.first-wrapper .zinc img,
+.second-wrapper .zinc img,
+.third-wrapper .zinc img,
+.first-wrapper .nylon-nut img,
+.second-wrapper .nylon-nut img,
+.third-wrapper .nylon-nut img {
+  max-width: 50%;
+}
+.first-wrapper .savlok-kit-bagged .img-wrapper-two {
+  position: relative;
+  float: left;
+  margin: 20px 0;
+}
+.first-wrapper .savlok-kit-bagged .img-wrapper-two .loose,
+.first-wrapper .savlok-kit-bagged .img-wrapper-two .bagged {
+  float: left;
+  width: 50%;
+}
+.third-wrapper .rivets .img-wrapper-two {
+  position: relative;
+  float: left;
+  font-size: 16px;
+}
+.third-wrapper .rivets .img-wrapper-two .pop {
+  float: left;
+  width: 50%;
+}
+.third-wrapper .rivets .img-wrapper-two .pop .desc {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
+}
+.third-wrapper .rivets .img-wrapper-two .peen {
+  float: left;
+  width: 50%;
+}
+.third-wrapper .rivets .img-wrapper-two .peen .desc {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  z-index: 1;
+}
+/* End Brochure Columns
+========================================================================== */
+/*# sourceMappingURL=savlok-style.css.map */
