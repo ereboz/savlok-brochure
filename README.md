@@ -6,10 +6,9 @@ replacement paths for server/local
 Dev Notes by javaBoxer: 8/7/17
 We will be using savlok-brochure.html in several sites:
 
-1. masterkeyed.com
-2.
-3.
-4.
+1. combolock.com
+2. keyeddifferent.com
+3. masterkeyed.com
 
 
 Files/Dir: local | server
