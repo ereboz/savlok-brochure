@@ -1706,75 +1706,23 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 ========================================================================== */
 /* Global'S
 ========================================================================== */
-* {
-  font-family: "Roboto", sans-serif;
-}
 body {
-  font-family: "Roboto", sans-serif;
+  color: inherit;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin: 0 0 20px 10px;
-  font-weight: 700;
-}
-a:link {
-  color: #48c;
-  text-decoration: none;
-}
-a:hover {
-  color: #ffb31a;
-}
-a:visited {
-  color: #e69900;
-}
-a:active {
-  color: blue;
-}
-.main-wrapper {
-  min-height: 600px;
-}
-.page-wrapper {
+.page-wrapper.savlok-brochure {
   margin-top: 0;
 }
-@media (min-width: 768px) {
-  .page-wrapper {
+@media (max-width: 768px) {
+  .page-wrapper.savlok-brochure {
     margin-top: 30px;
   }
 }
-.topic-heading {
-  width: 100%;
-  min-height: 50px;
-  color: #fff;
-  text-align: center;
-  background-color: black;
-          border-radius: 5px;
-
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-      -ms-border-radius: 5px;
-       -o-border-radius: 5px;
-}
-.topic-heading .image {
-  font-size: 24px;
-}
-.topic-sub-heading {
-  width: 100%;
-  max-height: 25px;
-  margin-top: 10px;
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  background-color: #595959;
-}
-.page-separator {
-  margin-bottom: 40px;
-}
 /* ==========================================================================
-****** Brochure Columns ******
+****** Brochure Columns [3] ******
 ========================================================================== */
+.page-wrapper[class*="brochure"] {
+  font-family: "Roboto", sans-serif;
+}
 .page-wrapper[class*="brochure"] .box {
   float: left;
   width: 100%;
@@ -1796,7 +1744,48 @@ a:active {
     min-height: 275px;
   }
 }
-.page-wrapper div[class$="wrapper"] {
+.page-wrapper[class*="brochure"] a:link {
+  color: #48c;
+  text-decoration: none;
+}
+.page-wrapper[class*="brochure"] a:hover {
+  color: #ffb31a;
+}
+.page-wrapper[class*="brochure"] a:visited {
+  color: #e69900;
+}
+.page-wrapper[class*="brochure"] a:active {
+  color: blue;
+}
+.page-wrapper[class*="brochure"] .topic-heading {
+  width: 100%;
+  min-height: 50px;
+  color: #fff;
+  text-align: center;
+  background-color: black;
+          border-radius: 5px;
+
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+       -o-border-radius: 5px;
+}
+.page-wrapper[class*="brochure"] .topic-heading .image {
+  font-size: 24px;
+}
+.page-wrapper[class*="brochure"] .topic-sub-heading {
+  width: 100%;
+  max-height: 25px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  background-color: #595959;
+}
+.page-wrapper[class*="brochure"] .page-separator {
+  margin-bottom: 40px;
+}
+.savlok-brochure div[class$="wrapper"] {
   margin-bottom: 15px;
 }
 .first-wrapper {
@@ -1845,7 +1834,7 @@ a:active {
 .first-wrapper .img-wrapper img,
 .second-wrapper .img-wrapper img,
 .third-wrapper .img-wrapper img {
-  margin: 0 auto;
+  margin: 25px auto;
 }
 .first-wrapper .first-elements,
 .second-wrapper .first-elements,
@@ -1883,7 +1872,7 @@ a:active {
 .third-wrapper .third-elements .element-details-head {
   padding: 5px;
   color: #fff;
-  background-color: #8c8c8c;
+  background-color: #b3b3b3;
 }
 .first-wrapper .first-elements .element-details-head .key,
 .second-wrapper .first-elements .element-details-head .key,
@@ -2047,50 +2036,42 @@ a:active {
   padding-right: 5px;
   text-align: right;
 }
-.first-wrapper .spacers img,
-.second-wrapper .spacers img,
-.third-wrapper .spacers img,
-.first-wrapper .o-ring img,
-.second-wrapper .o-ring img,
-.third-wrapper .o-ring img,
-.first-wrapper .zinc img,
-.second-wrapper .zinc img,
-.third-wrapper .zinc img,
-.first-wrapper .nylon-nut img,
-.second-wrapper .nylon-nut img,
-.third-wrapper .nylon-nut img {
+.spacers img,
+.o-ring img,
+.zinc img,
+.nylon-nut img {
   max-width: 50%;
 }
-.first-wrapper .savlok-kit-bagged .img-wrapper-two {
+.bolt-kit-carded .img-wrapper-two {
   position: relative;
   float: left;
   margin: 20px 0;
 }
-.first-wrapper .savlok-kit-bagged .img-wrapper-two .loose,
-.first-wrapper .savlok-kit-bagged .img-wrapper-two .bagged {
+.bolt-kit-carded .img-wrapper-two .loose,
+.bolt-kit-carded .img-wrapper-two .bagged {
   float: left;
   width: 50%;
 }
-.third-wrapper .rivets .img-wrapper-two {
+.rivets .img-wrapper-two {
   position: relative;
   float: left;
   font-size: 16px;
 }
-.third-wrapper .rivets .img-wrapper-two .pop {
+.rivets .img-wrapper-two .pop {
   float: left;
   width: 50%;
 }
-.third-wrapper .rivets .img-wrapper-two .pop .desc {
+.rivets .img-wrapper-two .pop .desc {
   position: absolute;
   top: 10%;
   left: 25%;
   z-index: 1;
 }
-.third-wrapper .rivets .img-wrapper-two .peen {
+.rivets .img-wrapper-two .peen {
   float: left;
   width: 50%;
 }
-.third-wrapper .rivets .img-wrapper-two .peen .desc {
+.rivets .img-wrapper-two .peen .desc {
   position: absolute;
   top: 10%;
   left: 90%;

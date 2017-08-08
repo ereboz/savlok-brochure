@@ -1,5 +1,5 @@
 //* Created by javaBoxer on 8/7/2017.
-@import "bootstrap";    // import bootstrap for framework, mixins and other minimal itmes.
+@import "bootstrap";    // import minimum bootstrap: framework, mixins and other itmes.
 
 
 /* Developer Notes
@@ -84,91 +84,33 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 
 //<editor-fold desc="Global's">
 
-* {
-    font-family: @font-roboto;
-}
 body {
-    font-family: @font-roboto;
+    color: inherit;
 }
 
-h1, h2, h3, h4, h5 {
-    margin: 0 0 20px 10px;
-    font-weight: 700;
-}
-
-a {
-    &:link {
-        color: @blue;
-        text-decoration: none;
-    }
-    &:hover {
-        color: lighten(@orange, 5%);
-    }
-    &:visited {
-        color: darken(@orange, 5%);
-    }
-    &:active {
-        color: blue;
-    }
-}
-
-
-
-.main-wrapper {
-    min-height: 600px;
-}
-
-.page-wrapper {
+.page-wrapper.savlok-brochure {
     margin-top: 0;
     
-    @media @tablet-min {
+    @media @tablet-max {
         margin-top: 30px;
     }
-}
-
-.topic-heading {
-    min-height: 50px;
-    width: 100%;
-    color: @white;
-    background-color: black;
-    text-align: center;
-    .rounded-corners();
-    
-    .image {
-        font-size: 24px;
-    }
-}
-
-.topic-sub-heading {
-    margin-top: 10px;
-    max-height: 25px;
-    width: 100%;
-    color: @white;
-    background-color: lighten(@black, 35%);
-    text-align: center;
-    font-size: 18px;
-}
-
-.page-separator {
-    //border-bottom: 1px solid @gray-light;
-    margin-bottom: 40px;
 }
 
 //</editor-fold>
 
 
 /* ==========================================================================
-****** Brochure Columns ******
+****** Brochure Columns [3] ******
 ========================================================================== */
 
 //<editor-fold desc="Brochure Columns">
 
-// look for .page-wrapper and a class with "brochure" in the page wrapper
-// then a "box" to style.
-// the 3 main sections: training, contact-info, resource-links
 .page-wrapper[class*="brochure"] {
     
-    // applies to div inside main wrappers
+    font-family: @font-roboto;
+    
+    // look for .page-wrapper and a class with "brochure" in the page wrapper
+    // then a "box" to style.
     .box {
         width: 100%;
         float: left;
@@ -184,34 +126,76 @@ a {
             min-height: 275px;
         }
     }
+    
+    a {
+        &:link {
+            color: @blue;
+            text-decoration: none;
+        }
+        &:hover {
+            color: lighten(@orange, 5%);
+        }
+        &:visited {
+            color: darken(@orange, 5%);
+        }
+        &:active {
+            color: blue;
+        }
+    }
+    
+    .topic-heading {
+        min-height: 50px;
+        width: 100%;
+        color: @white;
+        background-color: black;
+        text-align: center;
+        .rounded-corners();
+        
+        .image {
+            font-size: 24px;
+        }
+    }
+    
+    .topic-sub-heading {
+        margin-top: 10px;
+        max-height: 25px;
+        width: 100%;
+        color: @white;
+        background-color: lighten(@black, 35%);
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .page-separator {
+        margin-bottom: 40px;
+    }
+    
 }
 
-// look for value ending in wrapper inside page-wrapper (this page)
-// each main section and key-value pair wrappers will get this margin
-.page-wrapper {
+// look for value ending in wrapper inside savlok-brochure
+// each main section, image wrappers and key-value pair wrappers will get this margin
+.savlok-brochure {
     div[class$="wrapper"] {
         margin-bottom: 15px;
     }
 }
 
-// ************ First Wrapper Columns ************
+// ************ First Wrapper Column ************
 .first-wrapper {
     
     .make-sm-column(4);     // 768px (min)
 }
 
-// ************ Second Wrapper Columns ************
+// ************ Second Wrapper Column ************
 .second-wrapper {
     
     .make-sm-column(4);     // 768px (min)
 }
 
-// ************ Third Wrapper Columns ************
+// ************ Third Wrapper Column ************
 .third-wrapper {
     .make-sm-column(4);     // 768px (min)
 }
-
-
 
 // ************ Globals for 3 columns ************
 .first-wrapper, .second-wrapper, .third-wrapper {
@@ -222,7 +206,7 @@ a {
     
     .img-wrapper {
         img {
-            margin: 0 auto;
+            margin: 25px auto;
         }
     }
     
@@ -237,7 +221,7 @@ a {
         }
         
         .element-details-head {
-            background-color: lighten(@black, 55%);
+            background-color: lighten(@black, 70%);
             color: @white;
             padding: 5px;
             
@@ -312,82 +296,66 @@ a {
     }
 }
 
-.first-wrapper, .second-wrapper, .third-wrapper {
-    .spacers, .o-ring, .zinc, .nylon-nut {
-        img {
-            max-width: 50%;
+
+.spacers, .o-ring, .zinc, .nylon-nut {
+    img {
+        max-width: 50%;
+    }
+}
+
+
+
+.bolt-kit-carded {
+    .img-wrapper-two {
+        float: left;
+        position: relative;
+        margin: 20px 0;
+        
+        .loose, .bagged {
+            float: left;
+            width: 50%;
         }
     }
 }
 
-.first-wrapper {
-    .savlok-kit-bagged {
-        .img-wrapper-two {
-            float: left;
-            position: relative;
-            margin: 20px 0;
-            
-            .loose, .bagged {
-                float: left;
-                width: 50%;
-            }
-        }
-    }
-}
 
 .second-wrapper {
 
 }
 
-.third-wrapper {
-    .rivets {
-        .img-wrapper-two {
+.rivets {
+    .img-wrapper-two {
+        float: left;
+        position: relative;
+        font-size: 16px;
+        
+        .pop {
             float: left;
-            position: relative;
-            font-size: 16px;
+            width: 50%;
             
-            .pop {
-                float: left;
-                width: 50%;
-                
-                .desc {
-                    position: absolute;
-                    top: 10%;
-                    left: 25%;
-                    z-index: 1;
-                }
+            .desc {
+                position: absolute;
+                top: 10%;
+                left: 25%;
+                z-index: 1;
             }
+        }
+        
+        .peen {
+            float: left;
+            width: 50%;
             
-            .peen {
-                float: left;
-                width: 50%;
-                
-                .desc {
-                    position: absolute;
-                    top: 10%;
-                    left: 90%;
-                    z-index: 1;
-                }
+            .desc {
+                position: absolute;
+                top: 10%;
+                left: 90%;
+                z-index: 1;
             }
         }
     }
 }
 
+
 /* End Brochure Columns
 ========================================================================== */
 //</editor-fold>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
