@@ -30,13 +30,13 @@ Files/Dir: local | server
 	Server Location: /Scripts/savlok/
 
 3. savlok-style.less
-	Server Location: /Css/savlok/
+	Server Location: /Css/savlok/assets
 
 4. savlok-style.min.css
 	Server Location: /Css/savlok/
 	
 5. bootstrap.less
-	Server Location:
+	Server Location: /Css/savlok/assets
 
 6. gruntfile.js
 	Not needed on server (local FED build process)
