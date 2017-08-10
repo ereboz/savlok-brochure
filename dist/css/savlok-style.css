@@ -1935,7 +1935,7 @@ body {
 .second-wrapper .third-elements .kv-wrapper .key,
 .third-wrapper .third-elements .kv-wrapper .key {
   float: left;
-  width: 55%;
+  width: 45%;
   padding-left: 5px;
   text-align: left;
 }
@@ -1949,7 +1949,7 @@ body {
 .second-wrapper .third-elements .kv-wrapper .value,
 .third-wrapper .third-elements .kv-wrapper .value {
   float: left;
-  width: 45%;
+  width: 55%;
   padding-right: 5px;
   text-align: right;
 }
@@ -1963,6 +1963,17 @@ body {
 .second-wrapper .third-elements .kv-wrapper .value img,
 .third-wrapper .third-elements .kv-wrapper .value img {
   float: right;
+}
+.first-wrapper .first-elements .kv-wrapper a,
+.second-wrapper .first-elements .kv-wrapper a,
+.third-wrapper .first-elements .kv-wrapper a,
+.first-wrapper .second-elements .kv-wrapper a,
+.second-wrapper .second-elements .kv-wrapper a,
+.third-wrapper .second-elements .kv-wrapper a,
+.first-wrapper .third-elements .kv-wrapper a,
+.second-wrapper .third-elements .kv-wrapper a,
+.third-wrapper .third-elements .kv-wrapper a {
+  display: block;
 }
 .first-wrapper .first-elements .key-value-desc .key,
 .second-wrapper .first-elements .key-value-desc .key,
@@ -2036,9 +2047,11 @@ body {
 }
 .spacers img,
 .o-ring img,
-.zinc img,
 .nylon-nut img {
-  max-width: 50%;
+  max-width: 40%;
+}
+.zinc img {
+  max-width: 70%;
 }
 .bolt-kit-carded .img-wrapper-two {
   position: relative;
