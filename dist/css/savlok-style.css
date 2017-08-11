@@ -2063,6 +2063,12 @@ body {
   float: left;
   width: 50%;
 }
+.bolt-kit-carded .img-wrapper-two .loose img {
+  margin-top: 30%;
+}
+.bolt-kit-carded .img-wrapper-two .bagged img {
+  padding-left: 12%;
+}
 .rivets .img-wrapper-two {
   position: relative;
   float: left;
