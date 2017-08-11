@@ -1757,7 +1757,7 @@ body {
 }
 .page-wrapper[class*="brochure"] .topic-heading {
   width: 100%;
-  min-height: 50px;
+  min-height: 75px;
   color: #fff;
   text-align: center;
   background-color: black;
@@ -1766,8 +1766,14 @@ body {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
 }
-.page-wrapper[class*="brochure"] .topic-heading .image {
+.page-wrapper[class*="brochure"] .topic-heading .title-wrap {
+  padding-top: 10px;
   font-size: 24px;
+}
+.page-wrapper[class*="brochure"] .topic-heading .title-wrap .reg {
+  margin-left: -5px;
+  font-size: 12px;
+  vertical-align: super;
 }
 .page-wrapper[class*="brochure"] .topic-sub-heading {
   width: 100%;

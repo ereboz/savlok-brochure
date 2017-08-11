@@ -143,15 +143,22 @@ body {
     }
     
     .topic-heading {
-        min-height: 50px;
+        min-height: 75px;
         width: 100%;
         color: @white;
         background-color: black;
         text-align: center;
         .rounded-corners();
         
-        .title {
+        .title-wrap {
+            padding-top: 10px;
             font-size: 24px;
+            
+            .reg {
+                margin-left: -5px;
+                font-size: 12px;
+                vertical-align: super;
+            }
         }
     }
     
