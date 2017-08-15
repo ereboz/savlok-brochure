@@ -1799,7 +1799,7 @@ body {
 @media (min-width: 768px) {
   .first-wrapper {
     float: left;
-    width: 33.33333333%;
+    width: 25%;
   }
 }
 .second-wrapper {
@@ -1811,7 +1811,7 @@ body {
 @media (min-width: 768px) {
   .second-wrapper {
     float: left;
-    width: 33.33333333%;
+    width: 25%;
   }
 }
 .third-wrapper {
@@ -1823,30 +1823,51 @@ body {
 @media (min-width: 768px) {
   .third-wrapper {
     float: left;
-    width: 33.33333333%;
+    width: 25%;
+  }
+}
+.fourth-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .fourth-wrapper {
+    float: left;
+    width: 25%;
   }
 }
 @media (min-width: 992px) {
   .first-wrapper,
   .second-wrapper,
-  .third-wrapper {
+  .third-wrapper,
+  .fourth-wrapper {
     min-height: 400px;
   }
 }
 .first-wrapper .img-wrapper img,
 .second-wrapper .img-wrapper img,
-.third-wrapper .img-wrapper img {
+.third-wrapper .img-wrapper img,
+.fourth-wrapper .img-wrapper img {
   margin: 25px auto;
 }
 .first-wrapper .first-elements,
 .second-wrapper .first-elements,
 .third-wrapper .first-elements,
+.fourth-wrapper .first-elements,
 .first-wrapper .second-elements,
 .second-wrapper .second-elements,
 .third-wrapper .second-elements,
+.fourth-wrapper .second-elements,
 .first-wrapper .third-elements,
 .second-wrapper .third-elements,
-.third-wrapper .third-elements {
+.third-wrapper .third-elements,
+.fourth-wrapper .third-elements,
+.first-wrapper .fourth-elements,
+.second-wrapper .fourth-elements,
+.third-wrapper .fourth-elements,
+.fourth-wrapper .fourth-elements {
   float: left;
   width: 100%;
   padding: 10px;
@@ -1855,23 +1876,37 @@ body {
 .first-wrapper .first-elements .element-desc,
 .second-wrapper .first-elements .element-desc,
 .third-wrapper .first-elements .element-desc,
+.fourth-wrapper .first-elements .element-desc,
 .first-wrapper .second-elements .element-desc,
 .second-wrapper .second-elements .element-desc,
 .third-wrapper .second-elements .element-desc,
+.fourth-wrapper .second-elements .element-desc,
 .first-wrapper .third-elements .element-desc,
 .second-wrapper .third-elements .element-desc,
-.third-wrapper .third-elements .element-desc {
+.third-wrapper .third-elements .element-desc,
+.fourth-wrapper .third-elements .element-desc,
+.first-wrapper .fourth-elements .element-desc,
+.second-wrapper .fourth-elements .element-desc,
+.third-wrapper .fourth-elements .element-desc,
+.fourth-wrapper .fourth-elements .element-desc {
   margin: 10px 0 20px 0;
 }
 .first-wrapper .first-elements .element-details-head,
 .second-wrapper .first-elements .element-details-head,
 .third-wrapper .first-elements .element-details-head,
+.fourth-wrapper .first-elements .element-details-head,
 .first-wrapper .second-elements .element-details-head,
 .second-wrapper .second-elements .element-details-head,
 .third-wrapper .second-elements .element-details-head,
+.fourth-wrapper .second-elements .element-details-head,
 .first-wrapper .third-elements .element-details-head,
 .second-wrapper .third-elements .element-details-head,
-.third-wrapper .third-elements .element-details-head {
+.third-wrapper .third-elements .element-details-head,
+.fourth-wrapper .third-elements .element-details-head,
+.first-wrapper .fourth-elements .element-details-head,
+.second-wrapper .fourth-elements .element-details-head,
+.third-wrapper .fourth-elements .element-details-head,
+.fourth-wrapper .fourth-elements .element-details-head {
   padding: 5px;
   color: #fff;
   background-color: #b3b3b3;
@@ -1879,34 +1914,55 @@ body {
 .first-wrapper .first-elements .element-details-head .key,
 .second-wrapper .first-elements .element-details-head .key,
 .third-wrapper .first-elements .element-details-head .key,
+.fourth-wrapper .first-elements .element-details-head .key,
 .first-wrapper .second-elements .element-details-head .key,
 .second-wrapper .second-elements .element-details-head .key,
 .third-wrapper .second-elements .element-details-head .key,
+.fourth-wrapper .second-elements .element-details-head .key,
 .first-wrapper .third-elements .element-details-head .key,
 .second-wrapper .third-elements .element-details-head .key,
-.third-wrapper .third-elements .element-details-head .key {
+.third-wrapper .third-elements .element-details-head .key,
+.fourth-wrapper .third-elements .element-details-head .key,
+.first-wrapper .fourth-elements .element-details-head .key,
+.second-wrapper .fourth-elements .element-details-head .key,
+.third-wrapper .fourth-elements .element-details-head .key,
+.fourth-wrapper .fourth-elements .element-details-head .key {
   padding-left: 5px;
 }
 .first-wrapper .first-elements .element-details-head .value,
 .second-wrapper .first-elements .element-details-head .value,
 .third-wrapper .first-elements .element-details-head .value,
+.fourth-wrapper .first-elements .element-details-head .value,
 .first-wrapper .second-elements .element-details-head .value,
 .second-wrapper .second-elements .element-details-head .value,
 .third-wrapper .second-elements .element-details-head .value,
+.fourth-wrapper .second-elements .element-details-head .value,
 .first-wrapper .third-elements .element-details-head .value,
 .second-wrapper .third-elements .element-details-head .value,
-.third-wrapper .third-elements .element-details-head .value {
+.third-wrapper .third-elements .element-details-head .value,
+.fourth-wrapper .third-elements .element-details-head .value,
+.first-wrapper .fourth-elements .element-details-head .value,
+.second-wrapper .fourth-elements .element-details-head .value,
+.third-wrapper .fourth-elements .element-details-head .value,
+.fourth-wrapper .fourth-elements .element-details-head .value {
   padding-right: 5px;
 }
 .first-wrapper .first-elements .kv-wrapper,
 .second-wrapper .first-elements .kv-wrapper,
 .third-wrapper .first-elements .kv-wrapper,
+.fourth-wrapper .first-elements .kv-wrapper,
 .first-wrapper .second-elements .kv-wrapper,
 .second-wrapper .second-elements .kv-wrapper,
 .third-wrapper .second-elements .kv-wrapper,
+.fourth-wrapper .second-elements .kv-wrapper,
 .first-wrapper .third-elements .kv-wrapper,
 .second-wrapper .third-elements .kv-wrapper,
-.third-wrapper .third-elements .kv-wrapper {
+.third-wrapper .third-elements .kv-wrapper,
+.fourth-wrapper .third-elements .kv-wrapper,
+.first-wrapper .fourth-elements .kv-wrapper,
+.second-wrapper .fourth-elements .kv-wrapper,
+.third-wrapper .fourth-elements .kv-wrapper,
+.fourth-wrapper .fourth-elements .kv-wrapper {
   float: left;
   width: 100%;
   border-bottom: 1px dotted #bfbfbf;
@@ -1914,32 +1970,53 @@ body {
 .first-wrapper .first-elements .kv-wrapper .key,
 .second-wrapper .first-elements .kv-wrapper .key,
 .third-wrapper .first-elements .kv-wrapper .key,
+.fourth-wrapper .first-elements .kv-wrapper .key,
 .first-wrapper .second-elements .kv-wrapper .key,
 .second-wrapper .second-elements .kv-wrapper .key,
 .third-wrapper .second-elements .kv-wrapper .key,
+.fourth-wrapper .second-elements .kv-wrapper .key,
 .first-wrapper .third-elements .kv-wrapper .key,
 .second-wrapper .third-elements .kv-wrapper .key,
 .third-wrapper .third-elements .kv-wrapper .key,
+.fourth-wrapper .third-elements .kv-wrapper .key,
+.first-wrapper .fourth-elements .kv-wrapper .key,
+.second-wrapper .fourth-elements .kv-wrapper .key,
+.third-wrapper .fourth-elements .kv-wrapper .key,
+.fourth-wrapper .fourth-elements .kv-wrapper .key,
 .first-wrapper .first-elements .kv-wrapper .value,
 .second-wrapper .first-elements .kv-wrapper .value,
 .third-wrapper .first-elements .kv-wrapper .value,
+.fourth-wrapper .first-elements .kv-wrapper .value,
 .first-wrapper .second-elements .kv-wrapper .value,
 .second-wrapper .second-elements .kv-wrapper .value,
 .third-wrapper .second-elements .kv-wrapper .value,
+.fourth-wrapper .second-elements .kv-wrapper .value,
 .first-wrapper .third-elements .kv-wrapper .value,
 .second-wrapper .third-elements .kv-wrapper .value,
-.third-wrapper .third-elements .kv-wrapper .value {
+.third-wrapper .third-elements .kv-wrapper .value,
+.fourth-wrapper .third-elements .kv-wrapper .value,
+.first-wrapper .fourth-elements .kv-wrapper .value,
+.second-wrapper .fourth-elements .kv-wrapper .value,
+.third-wrapper .fourth-elements .kv-wrapper .value,
+.fourth-wrapper .fourth-elements .kv-wrapper .value {
   font-size: 14px;
 }
 .first-wrapper .first-elements .kv-wrapper .key,
 .second-wrapper .first-elements .kv-wrapper .key,
 .third-wrapper .first-elements .kv-wrapper .key,
+.fourth-wrapper .first-elements .kv-wrapper .key,
 .first-wrapper .second-elements .kv-wrapper .key,
 .second-wrapper .second-elements .kv-wrapper .key,
 .third-wrapper .second-elements .kv-wrapper .key,
+.fourth-wrapper .second-elements .kv-wrapper .key,
 .first-wrapper .third-elements .kv-wrapper .key,
 .second-wrapper .third-elements .kv-wrapper .key,
-.third-wrapper .third-elements .kv-wrapper .key {
+.third-wrapper .third-elements .kv-wrapper .key,
+.fourth-wrapper .third-elements .kv-wrapper .key,
+.first-wrapper .fourth-elements .kv-wrapper .key,
+.second-wrapper .fourth-elements .kv-wrapper .key,
+.third-wrapper .fourth-elements .kv-wrapper .key,
+.fourth-wrapper .fourth-elements .kv-wrapper .key {
   float: left;
   width: 45%;
   padding-left: 5px;
@@ -1948,12 +2025,19 @@ body {
 .first-wrapper .first-elements .kv-wrapper .value,
 .second-wrapper .first-elements .kv-wrapper .value,
 .third-wrapper .first-elements .kv-wrapper .value,
+.fourth-wrapper .first-elements .kv-wrapper .value,
 .first-wrapper .second-elements .kv-wrapper .value,
 .second-wrapper .second-elements .kv-wrapper .value,
 .third-wrapper .second-elements .kv-wrapper .value,
+.fourth-wrapper .second-elements .kv-wrapper .value,
 .first-wrapper .third-elements .kv-wrapper .value,
 .second-wrapper .third-elements .kv-wrapper .value,
-.third-wrapper .third-elements .kv-wrapper .value {
+.third-wrapper .third-elements .kv-wrapper .value,
+.fourth-wrapper .third-elements .kv-wrapper .value,
+.first-wrapper .fourth-elements .kv-wrapper .value,
+.second-wrapper .fourth-elements .kv-wrapper .value,
+.third-wrapper .fourth-elements .kv-wrapper .value,
+.fourth-wrapper .fourth-elements .kv-wrapper .value {
   float: left;
   width: 55%;
   padding-right: 5px;
@@ -1962,63 +2046,105 @@ body {
 .first-wrapper .first-elements .kv-wrapper .value img,
 .second-wrapper .first-elements .kv-wrapper .value img,
 .third-wrapper .first-elements .kv-wrapper .value img,
+.fourth-wrapper .first-elements .kv-wrapper .value img,
 .first-wrapper .second-elements .kv-wrapper .value img,
 .second-wrapper .second-elements .kv-wrapper .value img,
 .third-wrapper .second-elements .kv-wrapper .value img,
+.fourth-wrapper .second-elements .kv-wrapper .value img,
 .first-wrapper .third-elements .kv-wrapper .value img,
 .second-wrapper .third-elements .kv-wrapper .value img,
-.third-wrapper .third-elements .kv-wrapper .value img {
+.third-wrapper .third-elements .kv-wrapper .value img,
+.fourth-wrapper .third-elements .kv-wrapper .value img,
+.first-wrapper .fourth-elements .kv-wrapper .value img,
+.second-wrapper .fourth-elements .kv-wrapper .value img,
+.third-wrapper .fourth-elements .kv-wrapper .value img,
+.fourth-wrapper .fourth-elements .kv-wrapper .value img {
   float: right;
 }
 .first-wrapper .first-elements .kv-wrapper a,
 .second-wrapper .first-elements .kv-wrapper a,
 .third-wrapper .first-elements .kv-wrapper a,
+.fourth-wrapper .first-elements .kv-wrapper a,
 .first-wrapper .second-elements .kv-wrapper a,
 .second-wrapper .second-elements .kv-wrapper a,
 .third-wrapper .second-elements .kv-wrapper a,
+.fourth-wrapper .second-elements .kv-wrapper a,
 .first-wrapper .third-elements .kv-wrapper a,
 .second-wrapper .third-elements .kv-wrapper a,
-.third-wrapper .third-elements .kv-wrapper a {
+.third-wrapper .third-elements .kv-wrapper a,
+.fourth-wrapper .third-elements .kv-wrapper a,
+.first-wrapper .fourth-elements .kv-wrapper a,
+.second-wrapper .fourth-elements .kv-wrapper a,
+.third-wrapper .fourth-elements .kv-wrapper a,
+.fourth-wrapper .fourth-elements .kv-wrapper a {
   display: block;
 }
 .first-wrapper .first-elements .key-value-desc .key,
 .second-wrapper .first-elements .key-value-desc .key,
 .third-wrapper .first-elements .key-value-desc .key,
+.fourth-wrapper .first-elements .key-value-desc .key,
 .first-wrapper .second-elements .key-value-desc .key,
 .second-wrapper .second-elements .key-value-desc .key,
 .third-wrapper .second-elements .key-value-desc .key,
+.fourth-wrapper .second-elements .key-value-desc .key,
 .first-wrapper .third-elements .key-value-desc .key,
 .second-wrapper .third-elements .key-value-desc .key,
 .third-wrapper .third-elements .key-value-desc .key,
+.fourth-wrapper .third-elements .key-value-desc .key,
+.first-wrapper .fourth-elements .key-value-desc .key,
+.second-wrapper .fourth-elements .key-value-desc .key,
+.third-wrapper .fourth-elements .key-value-desc .key,
+.fourth-wrapper .fourth-elements .key-value-desc .key,
 .first-wrapper .first-elements .key-value-desc .value,
 .second-wrapper .first-elements .key-value-desc .value,
 .third-wrapper .first-elements .key-value-desc .value,
+.fourth-wrapper .first-elements .key-value-desc .value,
 .first-wrapper .second-elements .key-value-desc .value,
 .second-wrapper .second-elements .key-value-desc .value,
 .third-wrapper .second-elements .key-value-desc .value,
+.fourth-wrapper .second-elements .key-value-desc .value,
 .first-wrapper .third-elements .key-value-desc .value,
 .second-wrapper .third-elements .key-value-desc .value,
 .third-wrapper .third-elements .key-value-desc .value,
+.fourth-wrapper .third-elements .key-value-desc .value,
+.first-wrapper .fourth-elements .key-value-desc .value,
+.second-wrapper .fourth-elements .key-value-desc .value,
+.third-wrapper .fourth-elements .key-value-desc .value,
+.fourth-wrapper .fourth-elements .key-value-desc .value,
 .first-wrapper .first-elements .key-value-desc .desc,
 .second-wrapper .first-elements .key-value-desc .desc,
 .third-wrapper .first-elements .key-value-desc .desc,
+.fourth-wrapper .first-elements .key-value-desc .desc,
 .first-wrapper .second-elements .key-value-desc .desc,
 .second-wrapper .second-elements .key-value-desc .desc,
 .third-wrapper .second-elements .key-value-desc .desc,
+.fourth-wrapper .second-elements .key-value-desc .desc,
 .first-wrapper .third-elements .key-value-desc .desc,
 .second-wrapper .third-elements .key-value-desc .desc,
-.third-wrapper .third-elements .key-value-desc .desc {
+.third-wrapper .third-elements .key-value-desc .desc,
+.fourth-wrapper .third-elements .key-value-desc .desc,
+.first-wrapper .fourth-elements .key-value-desc .desc,
+.second-wrapper .fourth-elements .key-value-desc .desc,
+.third-wrapper .fourth-elements .key-value-desc .desc,
+.fourth-wrapper .fourth-elements .key-value-desc .desc {
   font-size: 14px;
 }
 .first-wrapper .first-elements .key-value-desc .key,
 .second-wrapper .first-elements .key-value-desc .key,
 .third-wrapper .first-elements .key-value-desc .key,
+.fourth-wrapper .first-elements .key-value-desc .key,
 .first-wrapper .second-elements .key-value-desc .key,
 .second-wrapper .second-elements .key-value-desc .key,
 .third-wrapper .second-elements .key-value-desc .key,
+.fourth-wrapper .second-elements .key-value-desc .key,
 .first-wrapper .third-elements .key-value-desc .key,
 .second-wrapper .third-elements .key-value-desc .key,
-.third-wrapper .third-elements .key-value-desc .key {
+.third-wrapper .third-elements .key-value-desc .key,
+.fourth-wrapper .third-elements .key-value-desc .key,
+.first-wrapper .fourth-elements .key-value-desc .key,
+.second-wrapper .fourth-elements .key-value-desc .key,
+.third-wrapper .fourth-elements .key-value-desc .key,
+.fourth-wrapper .fourth-elements .key-value-desc .key {
   float: left;
   width: 30%;
   padding-left: 5px;
@@ -2027,12 +2153,19 @@ body {
 .first-wrapper .first-elements .key-value-desc .value,
 .second-wrapper .first-elements .key-value-desc .value,
 .third-wrapper .first-elements .key-value-desc .value,
+.fourth-wrapper .first-elements .key-value-desc .value,
 .first-wrapper .second-elements .key-value-desc .value,
 .second-wrapper .second-elements .key-value-desc .value,
 .third-wrapper .second-elements .key-value-desc .value,
+.fourth-wrapper .second-elements .key-value-desc .value,
 .first-wrapper .third-elements .key-value-desc .value,
 .second-wrapper .third-elements .key-value-desc .value,
-.third-wrapper .third-elements .key-value-desc .value {
+.third-wrapper .third-elements .key-value-desc .value,
+.fourth-wrapper .third-elements .key-value-desc .value,
+.first-wrapper .fourth-elements .key-value-desc .value,
+.second-wrapper .fourth-elements .key-value-desc .value,
+.third-wrapper .fourth-elements .key-value-desc .value,
+.fourth-wrapper .fourth-elements .key-value-desc .value {
   float: left;
   width: 30%;
   text-align: center;
@@ -2040,12 +2173,19 @@ body {
 .first-wrapper .first-elements .key-value-desc .desc,
 .second-wrapper .first-elements .key-value-desc .desc,
 .third-wrapper .first-elements .key-value-desc .desc,
+.fourth-wrapper .first-elements .key-value-desc .desc,
 .first-wrapper .second-elements .key-value-desc .desc,
 .second-wrapper .second-elements .key-value-desc .desc,
 .third-wrapper .second-elements .key-value-desc .desc,
+.fourth-wrapper .second-elements .key-value-desc .desc,
 .first-wrapper .third-elements .key-value-desc .desc,
 .second-wrapper .third-elements .key-value-desc .desc,
-.third-wrapper .third-elements .key-value-desc .desc {
+.third-wrapper .third-elements .key-value-desc .desc,
+.fourth-wrapper .third-elements .key-value-desc .desc,
+.first-wrapper .fourth-elements .key-value-desc .desc,
+.second-wrapper .fourth-elements .key-value-desc .desc,
+.third-wrapper .fourth-elements .key-value-desc .desc,
+.fourth-wrapper .fourth-elements .key-value-desc .desc {
   float: left;
   width: 40%;
   padding-right: 5px;

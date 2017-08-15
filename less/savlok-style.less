@@ -189,22 +189,27 @@ body {
 // ************ First Wrapper Column ************
 .first-wrapper {
     
-    .make-sm-column(4);     // 768px (min)
+    .make-sm-column(3);     // 768px (min)
 }
 
 // ************ Second Wrapper Column ************
 .second-wrapper {
     
-    .make-sm-column(4);     // 768px (min)
+    .make-sm-column(3);     // 768px (min)
 }
 
 // ************ Third Wrapper Column ************
 .third-wrapper {
-    .make-sm-column(4);     // 768px (min)
+    .make-sm-column(3);     // 768px (min)
+}
+
+// ************ Fourth Wrapper Column ************
+.fourth-wrapper {
+    .make-sm-column(3);     // 768px (min)
 }
 
 // ************ Globals for 3 columns ************
-.first-wrapper, .second-wrapper, .third-wrapper {
+.first-wrapper, .second-wrapper, .third-wrapper, .fourth-wrapper {
     
     @media @desktop-min {
         min-height: 400px;
@@ -216,7 +221,7 @@ body {
         }
     }
     
-    .first-elements, .second-elements, .third-elements {
+    .first-elements, .second-elements, .third-elements, .fourth-elements {
         width: 100%;
         margin: 0 auto;
         float: left;
