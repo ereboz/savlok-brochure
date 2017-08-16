@@ -313,14 +313,18 @@ body {
     }
 }
 
+.emphasis {
+    font-weight: bold;
+}
+
 // these single images are way larger and need to be scaled look similar to the others.
-.spacers, .o-ring, .nylon-nut, .lok-plate-kit {
+.spacers, .o-ring, .nylon-nut{
     img {
         max-width: 40%;
     }
 }
 
-.zinc {
+.zinc, .lok-plate-kit  {
     img {
         max-width: 70%;
     }
@@ -333,24 +337,27 @@ body {
         margin: 20px 0;
         width: 100%;
         
-        .loose, .bagged {
+        .dis-assembled, .assembled {
             float: left;
             width: 50%;
         }
         
-        .loose {
+        .dis-assembled {
             img {
                 margin-top: 30%;
             }
         }
         
-        .bagged {
+        .assembled {
             img {
                 padding-left: 12%;
             }
         }
     }
 }
+
+
+
 
 .second-wrapper {
 

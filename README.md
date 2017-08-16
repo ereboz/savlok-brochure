@@ -6,7 +6,8 @@ replacement paths for server/local
 Dev Notes by javaBoxer: 8/7/17
 We will be using savlok-brochure.html in several sites:
 All sites but (masterkeyed.com) use:
-savlok-brochure.html in their respective topic dir.
+savlok-brochure.html in their respective topic dir. masterkeyed.com has one change in the links for chain that is different.
+and requiers it's own file version.
 
 1. combolock.com
 2. keyeddifferent.com

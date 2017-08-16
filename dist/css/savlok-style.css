@@ -2191,13 +2191,16 @@ body {
   padding-right: 5px;
   text-align: right;
 }
+.emphasis {
+  font-weight: bold;
+}
 .spacers img,
 .o-ring img,
-.nylon-nut img,
-.lok-plate-kit img {
+.nylon-nut img {
   max-width: 40%;
 }
-.zinc img {
+.zinc img,
+.lok-plate-kit img {
   max-width: 70%;
 }
 .bolt-kit-carded .img-wrapper-two {
@@ -2206,15 +2209,15 @@ body {
   width: 100%;
   margin: 20px 0;
 }
-.bolt-kit-carded .img-wrapper-two .loose,
-.bolt-kit-carded .img-wrapper-two .bagged {
+.bolt-kit-carded .img-wrapper-two .dis-assembled,
+.bolt-kit-carded .img-wrapper-two .assembled {
   float: left;
   width: 50%;
 }
-.bolt-kit-carded .img-wrapper-two .loose img {
+.bolt-kit-carded .img-wrapper-two .dis-assembled img {
   margin-top: 30%;
 }
-.bolt-kit-carded .img-wrapper-two .bagged img {
+.bolt-kit-carded .img-wrapper-two .assembled img {
   padding-left: 12%;
 }
 .rivets .img-wrapper-two {
