@@ -9,7 +9,7 @@ $(document).ready(function(){
     var loc = window.location.href.toLowerCase();
     var pageWrapper = "";
     
-    if (loc.indexOf('savlok-brochure') > -1) {
+    if (loc.indexOf('savlok') > -1) {
         pageWrapper = $(".topic-page");
         $(pageWrapper).parent().removeClass("container");
         $(pageWrapper).parent().addClass("container-fluid");
