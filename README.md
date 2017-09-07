@@ -1,3 +1,5 @@
+# Savlok Brochure
+
 replacement paths for server/local
 /images/assets/savlok/
  dist/images/
@@ -5,7 +7,7 @@ replacement paths for server/local
 
 Dev Notes by javaBoxer: 8/7/17
 We will be using savlok-brochure.html in several sites:
-lockpeople.com, combolock.com, keyeddifferent.com, masterkeyed.com
+lockpeople.com, combolock.com, keyedalike.com, keyeddifferent.com, masterkeyed.com, hodgeproducts.com
 All sites but (masterkeyed.com) use:
 savlok-brochure.html in their respective topic dir. masterkeyed.com has one change in the links for chain that is different.
 and requiers it's own file version.
@@ -49,7 +51,7 @@ Files: [SERVER]
 
 
 7. _HEAD.cshtml
-	Server Location: /Skins/Skin_21/Views/Shared/
+	Server Location: /Skins/Skin_*/Views/Shared/
 		Add link above the bootstrap.min.css
 			<link href="/css/savlok/savlok-style.min.css" rel="stylesheet">
 

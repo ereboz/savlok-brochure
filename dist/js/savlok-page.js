@@ -2,7 +2,7 @@
 // savlok-brochure
 
 // websites using the savlok-brochure have a bootstrap .container wrapper. We need to replace the parent container
-// with .container-fluid to accomodate full width for the brochure topic page.
+// with .container-fluid to accommodate full width for the brochure topic page.
 
 $(document).ready(function(){
     
@@ -18,7 +18,7 @@ $(document).ready(function(){
 });
 
 
-// make the 3 primary boxes above the fold the same height base on which box'z height is largest
+// make the primary boxes above the fold the same height base on which box's height is largest
 // we should add a window resize function as well
 
 $(window).load(function() {
