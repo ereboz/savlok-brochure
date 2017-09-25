@@ -1790,6 +1790,11 @@ body {
 .savlok-brochure div[class$="wrapper"] {
   margin-bottom: 15px;
 }
+.page-title {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  text-align: center;
+}
 .first-wrapper {
   position: relative;
   min-height: 1px;
